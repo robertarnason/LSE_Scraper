@@ -109,8 +109,8 @@ def lambda_handler(event, context):
     date_today = datetime.datetime.now()
     month_file_name = 'FTSE_Data_' +'{:02d}'.format(date_today.month) + '_' + str(date_today.year) + '.csv'
     
-    access_key_id = 'AKIARQ74HTM7YYCX4GX7'
-    access_secret_key = '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'
+    access_key_id = INPUT ACCESS KEY
+    access_secret_key = INPUT SECRET ACCESS KEY
     bucket = 'lsescraper'
     
     s3_client = boto3.client('s3',
